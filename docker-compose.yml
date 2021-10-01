@@ -1,8 +1,9 @@
 version: "3"
 services:
-  image: dorowu/ubuntu-desktop-lxde-vnc
-  restart: always
-  ports:
-    - 6080:80
-  volumes:
-    - ./shm:/dev/shm
+  desktop:
+    image: dorowu/ubuntu-desktop-lxde-vnc
+    restart: always
+    ports:
+      - 6080:80
+    volumes:
+      - ./shm:/dev/shm
